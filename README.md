@@ -6,6 +6,10 @@
 3- Run Crypto-Bot.py  
 4- You will get 2 files which are called members.xlsx and notused.xlsx. members.xlsx will have the list of accepted memberships while notused.xlsx will have the txid's of the users who are not accepted but paid some money to the company. (every file is explained in details later)
 
+# What does Crypto-Bot.py do?
+  As I explained earlier this bot finds the deposit_history.xlsx file and matches datas of it's 2 subsheets. In case of a match it checks out the money type and finds out if the minimum price is paid. Creates 2 new files called members.xlsx and notused.xlsx as output. When program is run there is a temporary database created but when program ends it is deleted. Crypto-Bot.py has it's own date conversion functions so when there is a new member program outputs the ending date of the membership. TRC20USDT, BEP20USDT, BEP20BUSD are the most important variables since they are the minimum limit that should be paid in every coin type other than that there aren't many thing that you should adjust when you use the program.
+  I will leave the example xlsx files so that you can try the program with small inputs.
+
 # What are the files that we have and what do they mean ?:
 
   There are 3 main files that we will be interested in. These are deposit_history.xlsx, members,xlsx and notused.xlsx.
@@ -18,9 +22,5 @@
   
 # members.xlsx :
   This file is also an output file. If everything goes according to the plan this file will have the info about the users who got approved.
-
-# What does Crypto-Bot.py do?
-  As I explained earlier this bot finds the deposit_history.xlsx file and matches datas of it's 2 subsheets. In case of a match it checks out the money type and finds out if the minimum price is paid. Creates 2 new files called members.xlsx and notused.xlsx as output. When program is run there is a temporary database created but when program ends it is deleted. Crypto-Bot.py has it's own date conversion functions so when there is a new member program outputs the ending date of the membership. TRC20USDT, BEP20USDT, BEP20BUSD are the most important variables since they are the minimum limit that should be paid in every coin type other than that there aren't many thing that you should adjust when you use the program.
-  I will leave the example xlsx files so that you can try the program with small inputs.
-
+  
 #Ömer Erdem Ahsen
